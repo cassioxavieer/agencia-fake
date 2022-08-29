@@ -16,26 +16,33 @@ body{
     display: flex;
     flex-flow: row wrap;
     height: 100px;
-    background: rgb(255, 255, 255);;  
+    background: rgb(255, 255, 255);  
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
 }
 
-.logo{
-    flex:20%;
+ /* .logo{
+    flex:10%;
     margin-left: 10%;
     /* border: 1px solid rgb(255, 0, 0); */
-    text-align: left;
+   
+  
+
+
+
+.logo-2{
+    flex:20%;
+    /* border: 1px solid rgb(255, 0, 0); */
 
 } 
 
-.logo h1{
+/* .logo h1{
     font-family:comfortaa;
     color: rgb(88, 0, 78);
-    font-size: 34px;
-}
+    font-size: 15px;
+} */
 .menu{
     flex: 70%;
     /* border:1px solid rgb(115, 255, 0); */
@@ -44,15 +51,16 @@ body{
 } 
 
 .menu a{
-    color: brown;
+    color: #CD1844;
     text-decoration: none;
     font-size: 20px;
     padding: 20px 16px;
 }
 
 .menu a:hover{
-   color: rgb(255, 0, 76);
-   border-top: 4px solid rgb(242, 33, 33);    
+   color:  #CD1844;;
+   border-top: 4px solid #4583C4
+   ;    
 }
 
 #botao{
@@ -63,7 +71,7 @@ body{
     border-radius: 5px;
     margin-right:10%;
     margin-left:5%;
-    background:rgb(200, 1, 255);
+    background:#CD1844    ;
     box-shadow: 1px 1px 0px 0px rgba(31, 21, 21, 0.658),
     1px 1px 0px 0px rgba(31, 21, 21, 0.658),
     1px 2px 0px 0px rgba(31, 21, 21, 0.658),
@@ -73,7 +81,7 @@ body{
 
   #botao:hover {
     border: none;
-    background: rgb(200, 50, 255); 
+    background:#ff4372; 
     transform: translate(-3px, -3px);
     box-shadow: 1px 1px 1px 2px rgba(31, 21, 21, 0.658),
       2px 2px 1px 0px rgba(31, 21, 21, 0.658),
@@ -101,7 +109,7 @@ body{
   .header{
     display: flex;
     flex-flow:row wrap; 
-    background: #641ac5 ;
+    background: #ffffff ;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
@@ -122,14 +130,13 @@ body{
 } 
 
 .headline p{
-    color: #23c636;
+    color: #ffffff;
     text-align: left;
 
 }
 .contact-btn{ 
     display: inline-block;  
-    background:rgb(200, 1, 255);
-
+    background:#CD1844;
     padding: 20px;
     color: antiquewhite;
     text-transform: uppercase;
@@ -146,7 +153,7 @@ body{
 }
 
 .contact-btn:hover{
-    background: rgb(200, 50, 255); 
+    background: #ff4372; 
     box-shadow: 1px 1px 1px 2px rgba(31, 21, 21, 0.658),
       2px 2px 1px 0px rgba(31, 21, 21, 0.658),
       3px 3px 1px 0px rgba(31, 21, 21, 0.658),
@@ -239,17 +246,17 @@ display: none;
 }
 
 footer{
-    border-top: 5px solid firebrick;
-    text-align: center;
-    margin-top: 100px;
-    height: 400px;
-    background-image: linear-gradient(180deg, rgb(70, 15, 75), rgb(179, 42, 172),rgb(53, 0, 25));
+    text-align:center;
+    margin-top: 20px;
+    height: 100px;
+    background-color: #CD1844
+    ;
 }
 
-.logo-rodape{
-    padding: 100px;
+/* .logo-rodape{
+    padding: 50px;
     
-}
+} */
 
 .agencia{
     font-family:comfortaa;
