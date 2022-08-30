@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
 *{
@@ -9,7 +10,7 @@
 
 body{
     margin:0; 
-    font-family: Josefin Sans;
+    font-family:  open sans ;
 }
 
 .navbar{
@@ -55,6 +56,12 @@ body{
     text-decoration: none;
     font-size: 20px;
     padding: 20px 16px;
+    box-shadow: 1px 0px 0px 0px rgba(31, 21, 21, 0.150),
+    2px 2px 6px 0px rgba(0, 217, 255, 0.400),
+    2px 2px 0px 0px rgba(247, 222, 0, 0.200),
+    0px 0px 0px 0px rgba(31, 21, 21, 0.658),
+    2px 2px 6px 2px rgba(255, 0, 0, 0.200) inset;
+  transform: translate(0px, 0px);
 }
 
 .menu a:hover{
@@ -181,7 +188,7 @@ body{
 
 
 
-img-headline{ 
+.img-headline{ 
     margin-right: 10%;
     flex: 40%;
     /* border:1px solid pink; */
@@ -217,7 +224,7 @@ section h2{
     width: 30%;
     padding: 20px;
     margin: 1%;
-    border: 1px solid firebrick ;
+    border: 1px solid #CD1844;
     border-radius: 10px;
     cursor: pointer;
 
@@ -225,9 +232,16 @@ section h2{
 }
 .card:hover{
 
-    background: #641ac5;
+    background: #4583C4;
     color: aliceblue;
     padding: 40px;
+    box-shadow: 1px 1px 1px 2px rgba(31, 21, 21, 0.336),
+      2px 2px 1px 0px rgba(31, 21, 21, 0.150),
+      3px 3px 1px 0px rgba(31, 21, 21, 0.200),
+      2px 4px 1px 0px rgba(31, 21, 21, 0.200),
+      0px 0px 0px 0px rgba(31, 21, 21, 0) inset;
+  
+    transition: all 0.2s;
 }  
 
 .texto-oculto{
@@ -268,6 +282,21 @@ footer{
 
 .whats{
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    bottom: 15px;
+    right: 15px;
+    animation: up-down 5s infinite ease-in-out alternate;
+  
 }
+
+@keyframes up-down{
+    from{
+      transform: translatey(10px);
+    }
+    to{
+      transform: translatey(-500px);
+    }
+
+  }
+  
+
+   
