@@ -11,17 +11,19 @@
 body{
     margin:0; 
     font-family:  open sans ;
+    scroll-behavior: smooth;
+
 }
 
 .navbar{
     display: flex;
     flex-flow: row wrap;
     height: 100px;
-    background: rgb(255, 255, 255);  
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
+    border: solid 5px #CD1844;
 }
 
   .logo{
@@ -108,13 +110,13 @@ body{
 
   }
 
-  header{   
-    flex-direction: row;
+  .header{   
+display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
 
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 80px;
     /* border: 1px solid black; */
     margin-left:5%;
@@ -127,7 +129,9 @@ body{
 
 
 .headline h2{
-    font-size: 20px;
+  display: flex;
+    justify-content: center;
+    font-size: 40px;
     padding: 0;
     margin: 0;
    
@@ -135,7 +139,8 @@ body{
 
 .headline p{
     color: #ffffff;
-    
+    display: flex;
+    justify-content: center;
 
 }
 .contact-btn{ 
@@ -226,6 +231,11 @@ section h2{
     border: 1px solid #CD1844;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0px 0px 0px 0px rgba(31, 21, 21, 0.658),
+   2px 2px 6px 2px rgba(31, 21, 21, 0.308) inset;
+  transform: translate(0px, 0px);
+  background: #ffffff;
+
 
 
 }
@@ -259,9 +269,11 @@ display: none;
 }
 
 footer{
+  display: block;
     text-align:center;
-    height: 100px;
+    height: 50px;
     background-color: #CD1844;
+    font-size: 12px;
     
     justify-content: center;
     row-gap: 10px;
