@@ -23,14 +23,16 @@ body{
     align-items: center;
     position: fixed;
     width: 100%;
-    border: solid 5px #CD1844;
+    background:#ffffff;
+    z-index: 1;
+    
 }
 
   .logo{
     flex:10%;
     margin-left: 2%;
     display: flex;
-    padding: 16px;
+    padding: 5px;
     /* border: 1px solid rgb(255, 0, 0); 
     
     */
@@ -42,7 +44,7 @@ body{
     font-size: 15px;
 } */
 .menu{
-    flex: 70%;
+    flex: 80%;
     /* border:1px solid rgb(115, 255, 0); */
     text-align:right;
     padding: 20px; 
@@ -111,22 +113,37 @@ body{
   }
 
   .header{   
-display: flex;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    padding-top:100px;
+/* display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
 
     /* display: inline-block; */
-    margin-top: 80px;
-    /* border: 1px solid black; */
-    margin-left:5%;
-    margin-right:5%;
-    padding: 5%;
-    text-align: center;
+    /* margin-top: 100px;
+    border: 1px solid black; */
+    /* margin-left:5%; */
+    /* margin-right:5%; */
+    /* padding: 5%; */
+    /* text-align: center; */ */
       }
 
 
-
+      .headline{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        flex:100%;
+        /* border:1px solid black; */
+    }
+    
 
 .headline h2{
   display: flex;
@@ -134,6 +151,7 @@ display: flex;
     font-size: 40px;
     padding: 0;
     margin: 0;
+    color:#CD1844
    
 } 
 
@@ -217,6 +235,7 @@ section h2{
     font-size: 50px;
     font-family:  open sans ;
     font-weight: bold;
+    color:#4583C4;
 }
 
 .servicos {
@@ -238,6 +257,10 @@ section h2{
 
 
 
+}
+
+.card h3{
+  color: #CD1844;
 }
 .card:hover{
 
@@ -308,7 +331,7 @@ footer{
       transform: translatey(10px);
     }
     to{
-      transform: translatey(-500px);
+      transform: translatey(-20px);
     }
 
   }
